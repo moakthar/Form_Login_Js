@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | MyApp</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-card">
+        <ul class="auth-tabs">
+          <li class="auth-tab active"><a href="login.html">Login</a></li>
+          <li class="auth-tab"><a href="signup.html">Sign Up</a></li>
+        </ul>
+
+        <div class="auth-header">
+          <h2>Welcome Back</h2>
+          <p>Please enter your credentials to login</p>
+        </div>
+
+        <div class="auth-form-container">
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="username" class="auth-label"
+                >Username or Email:</label
+              >
+              <input
+                type="text"
+                id="username"
+                class="auth-input"
+                placeholder="Enter your username or email"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="auth-label">Password:</label>
+              <div class="password-container">
+                <input
+                  type="password"
+                  id="password"
+                  class="auth-input"
+                  placeholder="Enter your password"
+                  required />
+                <button
+                  type="button"
+                  class="password-toggle"
+                  onclick="togglePassword()">
+                  Show
+                </button>
+              </div>
+            </div>
+
+            <div class="auth-checkbox-container">
+              <input type="checkbox" id="remember" class="auth-checkbox" />
+              <label for="remember" class="auth-checkbox-label"
+                >Remember me</label
+              >
+            </div>
+
+            <a href="#" class="auth-link">Forgot password?</a>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="width: 100%; margin-top: 20px">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>
